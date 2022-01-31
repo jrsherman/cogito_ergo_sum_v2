@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  background-color: #26272b;
+   font-family: "Tahoma";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("../public/electric_brain.png");
+  background-repeat:no-repeat;
+  background-size: 100%;
+}
+
+.uploadedPhoto {
+  border-radius: 25px;
+     height: 120px;
+     width: 120px;
+}
+.inputSearch{
+  float:left;
+  margin-left: 34px;
+}
+
+#search{
+  height:70px;
+}
+#upload-button{
+    margin-right: 10px;
+    float:right;
+    height:65px;
+}
+
+#search-bar{
+  text-align: left;
+  padding: 20px;
+}
+#center-square {
+  padding:40px;
+  overflow: scroll;
+  color:black;
+  margin-top: 100px;
+  margin-top:200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  width:400px;
+  height:400px;
+  display:block;
+  background-color: white;
+  opacity:.7;
+  border-radius: 25px;
+}
+
+#image-square {
+
+  margin:25px;
+  float:left;
+  border-radius: 25px;
+  width:120px;
+  height:120px;
+  background-color: black;
+  opacity:.9;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

@@ -1,0 +1,1145 @@
+[debug] [2022-01-30T19:21:13.448Z] ----------------------------------------------------------------------
+[debug] [2022-01-30T19:21:13.451Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2022-01-30T19:21:13.451Z] CLI Version:   10.1.2
+[debug] [2022-01-30T19:21:13.451Z] Platform:      darwin
+[debug] [2022-01-30T19:21:13.451Z] Node Version:  v16.13.2
+[debug] [2022-01-30T19:21:13.453Z] Time:          Sun Jan 30 2022 13:21:13 GMT-0600 (Central Standard Time)
+[debug] [2022-01-30T19:21:13.453Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-30T19:21:13.529Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-30T19:21:13.530Z] > authorizing via signed-in user (jakesherman75@gmail.com)
+[info] i  emulators: Starting emulators: functions, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, storage"}}
+[debug] [2022-01-30T19:21:13.567Z] [hub] writing locator at /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/hub-strive-62ef8.json
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub\u001b[22m"}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[warn] ⚠  Your requested "node" version "16" doesn't match your global version "16" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"16\""}}
+[debug] [2022-01-30T19:21:13.597Z] defaultcredentials: writing to file /Users/jacobsherman/.config/firebase/jakesherman75_gmail_com_application_default_credentials.json
+[debug] [2022-01-30T19:21:13.599Z] Setting GAC to /Users/jacobsherman/.config/firebase/jakesherman75_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/jacobsherman/.config/firebase/jakesherman75_gmail_com_application_default_credentials.json"}}
+[debug] [2022-01-30T19:21:13.603Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/strive-62ef8/adminSdkConfig [none]
+[debug] [2022-01-30T19:21:13.833Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/strive-62ef8/adminSdkConfig 200
+[debug] [2022-01-30T19:21:13.833Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/strive-62ef8/adminSdkConfig {"projectId":"strive-62ef8","storageBucket":"strive-62ef8.appspot.com","locationId":"us-central"}
+[debug] [2022-01-30T19:21:14.110Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-01-30T19:21:14.300Z] Temp file directory for storage emulator: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/firebase/storage/blobs"}}
+[debug] [2022-01-30T19:21:15.238Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-01-30T19:21:15.238Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-01-30T19:21:15.238Z] Starting Emulator UI with command {"binary":"node","args":["/Users/jacobsherman/.cache/firebase/emulators/ui-v1.6.4/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/jacobsherman/.cache/firebase/emulators/ui-v1.6.4/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-01-30T19:21:15.331Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "/Users/jacobsherman/Desktop/strive-firebase/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/jacobsherman/Desktop/strive-firebase/functions\" for Cloud Functions..."}}
+[debug] [2022-01-30T19:21:15.509Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2022-01-30T19:21:15.509Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=1"}}
+[debug] [2022-01-30T19:21:15.509Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2022-01-30T19:21:15.510Z] [worker-~diagnostic~-a8108856-3ce7-4b9f-9d79-2db4873cb39e]: Assigning socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40548.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-a8108856-3ce7-4b9f-9d79-2db4873cb39e]: Assigning socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40548.sock"}}
+[debug] [2022-01-30T19:21:15.510Z] [worker-~diagnostic~-a8108856-3ce7-4b9f-9d79-2db4873cb39e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-a8108856-3ce7-4b9f-9d79-2db4873cb39e]: BUSY"}}
+[debug] [2022-01-30T19:21:15.634Z] [runtime-status] [40548] Functions runtime initialized. {"cwd":"/Users/jacobsherman/Desktop/strive-firebase/functions","node_version":"16.13.2"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40548] Functions runtime initialized. {\"cwd\":\"/Users/jacobsherman/Desktop/strive-firebase/functions\",\"node_version\":\"16.13.2\"}"}}
+[debug] [2022-01-30T19:21:15.634Z] [runtime-status] [40548] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40548] Disabled runtime features: undefined"}}
+[debug] [2022-01-30T19:21:15.636Z] [runtime-status] [40548] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40548] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-01-30T19:21:15.639Z] [runtime-status] [40548] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40548] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:21:15.640Z] [runtime-status] [40548] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40548] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-01-30T19:21:15.641Z] [runtime-status] [40548] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40548] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:21:15.673Z] [runtime-status] [40548] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40548] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-01-30T19:21:15.674Z] [runtime-status] [40548] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40548] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-01-30T19:21:15.674Z] [runtime-status] [40548] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40548] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:21:15.675Z] [runtime-status] [40548] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40548] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-01-30T19:21:15.676Z] [runtime-status] [40548] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40548] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:21:15.676Z] [runtime-status] [40548] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40548] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-01-30T19:21:15.688Z] [runtime-status] [40548] initializeApp(DEFAULT) {"storageBucket":"strive-62ef8.appspot.com","projectId":"strive-62ef8"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40548] initializeApp(DEFAULT) {\"storageBucket\":\"strive-62ef8.appspot.com\",\"projectId\":\"strive-62ef8\"}"}}
+[info] ✔  functions[us-central1-uploadFile]: http function initialized (http://localhost:5001/strive-62ef8/us-central1/uploadFile). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/strive-62ef8/us-central1/uploadFile)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Storage   │ localhost:9199 │ http://localhost:4000/storage   │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-01-30T19:21:15.800Z] [worker-~diagnostic~-a8108856-3ce7-4b9f-9d79-2db4873cb39e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-a8108856-3ce7-4b9f-9d79-2db4873cb39e]: IDLE"}}
+[debug] [2022-01-30T19:21:39.200Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-01-30T19:21:39.201Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-01-30T19:21:39.202Z] Accepted request POST /strive-62ef8/us-central1/uploadFile --> us-central1-uploadFile
+[debug] [2022-01-30T19:21:39.215Z] [worker-pool] addWorker(us-central1-uploadFile) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-uploadFile)"}}
+[debug] [2022-01-30T19:21:39.215Z] [worker-pool] Adding worker with key us-central1-uploadFile, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-uploadFile, total=1"}}
+[debug] [2022-01-30T19:21:39.216Z] [worker-pool] submitWork(triggerId=us-central1-uploadFile) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-uploadFile)"}}
+[debug] [2022-01-30T19:21:39.216Z] [worker-us-central1-uploadFile-c0eddbb3-9a27-47fc-8a15-70938a76a87f]: Assigning socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40552.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-uploadFile-c0eddbb3-9a27-47fc-8a15-70938a76a87f]: Assigning socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40552.sock"}}
+[debug] [2022-01-30T19:21:39.216Z] [worker-us-central1-uploadFile-c0eddbb3-9a27-47fc-8a15-70938a76a87f]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-uploadFile-c0eddbb3-9a27-47fc-8a15-70938a76a87f]: BUSY"}}
+[debug] [2022-01-30T19:21:39.420Z] [runtime-status] [40552] Functions runtime initialized. {"cwd":"/Users/jacobsherman/Desktop/strive-firebase/functions","node_version":"16.13.2"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"[runtime-status] [40552] Functions runtime initialized. {\"cwd\":\"/Users/jacobsherman/Desktop/strive-firebase/functions\",\"node_version\":\"16.13.2\"}"}}
+[debug] [2022-01-30T19:21:39.421Z] [runtime-status] [40552] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"[runtime-status] [40552] Disabled runtime features: undefined"}}
+[debug] [2022-01-30T19:21:39.424Z] [runtime-status] [40552] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"[runtime-status] [40552] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-01-30T19:21:39.430Z] [runtime-status] [40552] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"[runtime-status] [40552] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:21:39.433Z] [runtime-status] [40552] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"[runtime-status] [40552] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-01-30T19:21:39.435Z] [runtime-status] [40552] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"[runtime-status] [40552] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:21:39.490Z] [runtime-status] [40552] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"[runtime-status] [40552] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-01-30T19:21:39.490Z] [runtime-status] [40552] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"[runtime-status] [40552] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-01-30T19:21:39.491Z] [runtime-status] [40552] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"[runtime-status] [40552] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:21:39.494Z] [runtime-status] [40552] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"[runtime-status] [40552] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-01-30T19:21:39.494Z] [runtime-status] [40552] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"[runtime-status] [40552] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:21:39.495Z] [runtime-status] [40552] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"[runtime-status] [40552] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-01-30T19:21:39.543Z] [runtime-status] [40552] initializeApp(DEFAULT) {"storageBucket":"strive-62ef8.appspot.com","projectId":"strive-62ef8"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"[runtime-status] [40552] initializeApp(DEFAULT) {\"storageBucket\":\"strive-62ef8.appspot.com\",\"projectId\":\"strive-62ef8\"}"}}
+[debug] [2022-01-30T19:21:39.746Z] [runtime-status] [40552] Trigger "us-central1-uploadFile" has been found, beginning invocation! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"[runtime-status] [40552] Trigger \"us-central1-uploadFile\" has been found, beginning invocation!"}}
+[info] i  functions: Beginning execution of "us-central1-uploadFile" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"Beginning execution of \"us-central1-uploadFile\""}}
+[debug] [2022-01-30T19:21:39.747Z] [runtime-status] [40552] triggerDefinition {"httpsTrigger":{},"name":"uploadFile","entryPoint":"uploadFile","regions":["us-central1"],"region":"us-central1","id":"us-central1-uploadFile","platform":"gcfv1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"[runtime-status] [40552] triggerDefinition {\"httpsTrigger\":{},\"name\":\"uploadFile\",\"entryPoint\":\"uploadFile\",\"regions\":[\"us-central1\"],\"region\":\"us-central1\",\"id\":\"us-central1-uploadFile\",\"platform\":\"gcfv1\"}"}}
+[debug] [2022-01-30T19:21:39.747Z] [runtime-status] [40552] Running us-central1-uploadFile in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"[runtime-status] [40552] Running us-central1-uploadFile in signature http"}}
+[debug] [2022-01-30T19:21:39.751Z] [runtime-status] [40552] Attempting to listen to socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40552.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"[runtime-status] [40552] Attempting to listen to socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40552.sock"}}
+[debug] [2022-01-30T19:21:39.754Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-01-30T19:21:39.755Z] [functions] Got req.url=/strive-62ef8/us-central1/uploadFile, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/strive-62ef8/us-central1/uploadFile, mapping to path=/"}}
+[debug] [2022-01-30T19:21:39.767Z] [runtime-status] [40552] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"[runtime-status] [40552] Ephemeral server handling POST request"}}
+[info] >  /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/640px-PNG_transparency_demonstration_1.png {"user":"/var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/640px-PNG_transparency_demonstration_1.png","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"\u001b[90m> \u001b[39m /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/640px-PNG_transparency_demonstration_1.png"}}
+[debug] [2022-01-30T19:21:39.775Z] [runtime-status] [40552] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"[runtime-status] [40552] Ephemeral server survived."}}
+[debug] [2022-01-30T19:21:39.861Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/strive-62ef8/trigger_multicast [none]
+[debug] [2022-01-30T19:21:39.862Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/strive-62ef8/trigger_multicast {"eventId":"1643570499860","timestamp":"2022-01-30T13:21:39.860Z","eventType":"google.storage.object.metadataUpdate","resource":{"service":"storage.googleapis.com","name":"projects/_/buckets/strive-62ef8/objects/640px-PNG_transparency_demonstration_1.png","type":"storage#object"},"data":{"kind":"#storage#object","name":"640px-PNG_transparency_demonstration_1.png","bucket":"strive-62ef8","generation":"1643570499856","metageneration":"1","contentType":"image/png","timeCreated":"2022-01-30T13:21:39.855Z","updated":"2022-01-30T13:21:39.859Z","storageClass":"STANDARD","size":"174780","md5Hash":"0z7nJdsCBQShCumJin+ZPw==","etag":"someETag","crc32c":"----lg==","timeStorageClassUpdated":"2022-01-30T13:21:39.855Z","id":"strive-62ef8/640px-PNG_transparency_demonstration_1.png/1643570499856","selfLink":"http://localhost:9199/storage/v1/b/strive-62ef8/o/640px-PNG_transparency_demonstration_1.png","mediaLink":"http://localhost:9199/download/storage/v1/b/strive-62ef8/o/640px-PNG_transparency_demonstration_1.png?generation=1643570499856&alt=media"}}
+[debug] [2022-01-30T19:21:39.865Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/strive-62ef8/trigger_multicast [none]
+[debug] [2022-01-30T19:21:39.865Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/strive-62ef8/trigger_multicast {"eventId":"1643570499865","timestamp":"2022-01-30T13:21:39.865Z","eventType":"google.storage.object.finalize","resource":{"service":"storage.googleapis.com","name":"projects/_/buckets/strive-62ef8/objects/640px-PNG_transparency_demonstration_1.png","type":"storage#object"},"data":{"kind":"#storage#object","name":"640px-PNG_transparency_demonstration_1.png","bucket":"strive-62ef8","generation":"1643570499856","metageneration":"1","contentType":"image/png","timeCreated":"2022-01-30T13:21:39.855Z","updated":"2022-01-30T13:21:39.859Z","storageClass":"STANDARD","size":"174780","md5Hash":"0z7nJdsCBQShCumJin+ZPw==","etag":"someETag","crc32c":"----lg==","timeStorageClassUpdated":"2022-01-30T13:21:39.855Z","id":"strive-62ef8/640px-PNG_transparency_demonstration_1.png/1643570499856","selfLink":"http://localhost:9199/storage/v1/b/strive-62ef8/o/640px-PNG_transparency_demonstration_1.png","mediaLink":"http://localhost:9199/download/storage/v1/b/strive-62ef8/o/640px-PNG_transparency_demonstration_1.png?generation=1643570499856&alt=media"}}
+[debug] [2022-01-30T19:21:39.889Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/strive-62ef8/trigger_multicast 200
+[debug] [2022-01-30T19:21:39.889Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/strive-62ef8/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-01-30T19:21:39.894Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/strive-62ef8/trigger_multicast [none]
+[debug] [2022-01-30T19:21:39.895Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/strive-62ef8/trigger_multicast {"specversion":"1","id":"e696c7de-5899-4907-ad1d-e33ae920afcb","type":"google.cloud.storage.object.v1.metadataUpdated","source":"//storage.googleapis.com/projects/_/buckets/strive-62ef8/objects/640px-PNG_transparency_demonstration_1.png","time":"2022-01-30T13:21:39.859Z","data":{"kind":"#storage#object","name":"640px-PNG_transparency_demonstration_1.png","bucket":"strive-62ef8","generation":"1643570499856","metageneration":"1","contentType":"image/png","timeCreated":"2022-01-30T13:21:39.855Z","updated":"2022-01-30T13:21:39.859Z","storageClass":"STANDARD","size":"174780","md5Hash":"0z7nJdsCBQShCumJin+ZPw==","etag":"someETag","crc32c":"----lg==","timeStorageClassUpdated":"2022-01-30T13:21:39.855Z","id":"strive-62ef8/640px-PNG_transparency_demonstration_1.png/1643570499856","selfLink":"http://localhost:9199/storage/v1/b/strive-62ef8/o/640px-PNG_transparency_demonstration_1.png","mediaLink":"http://localhost:9199/download/storage/v1/b/strive-62ef8/o/640px-PNG_transparency_demonstration_1.png?generation=1643570499856&alt=media"}}
+[debug] [2022-01-30T19:21:39.899Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/strive-62ef8/trigger_multicast 200
+[debug] [2022-01-30T19:21:39.899Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/strive-62ef8/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-01-30T19:21:39.900Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/strive-62ef8/trigger_multicast [none]
+[debug] [2022-01-30T19:21:39.901Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/strive-62ef8/trigger_multicast {"specversion":"1","id":"cdd03357-6db9-40e1-a098-46aefbe60c9b","type":"google.cloud.storage.object.v1.finalized","source":"//storage.googleapis.com/projects/_/buckets/strive-62ef8/objects/640px-PNG_transparency_demonstration_1.png","time":"2022-01-30T13:21:39.859Z","data":{"kind":"#storage#object","name":"640px-PNG_transparency_demonstration_1.png","bucket":"strive-62ef8","generation":"1643570499856","metageneration":"1","contentType":"image/png","timeCreated":"2022-01-30T13:21:39.855Z","updated":"2022-01-30T13:21:39.859Z","storageClass":"STANDARD","size":"174780","md5Hash":"0z7nJdsCBQShCumJin+ZPw==","etag":"someETag","crc32c":"----lg==","timeStorageClassUpdated":"2022-01-30T13:21:39.855Z","id":"strive-62ef8/640px-PNG_transparency_demonstration_1.png/1643570499856","selfLink":"http://localhost:9199/storage/v1/b/strive-62ef8/o/640px-PNG_transparency_demonstration_1.png","mediaLink":"http://localhost:9199/download/storage/v1/b/strive-62ef8/o/640px-PNG_transparency_demonstration_1.png?generation=1643570499856&alt=media"}}
+[debug] [2022-01-30T19:21:39.907Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/strive-62ef8/trigger_multicast 200
+[debug] [2022-01-30T19:21:39.907Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/strive-62ef8/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-01-30T19:21:39.909Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/strive-62ef8/trigger_multicast 200
+[debug] [2022-01-30T19:21:39.910Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/strive-62ef8/trigger_multicast {"status":"multicast_acknowledged"}
+[info] i  functions: Finished "us-central1-uploadFile" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-uploadFile"},"message":"Finished \"us-central1-uploadFile\" in ~1s"}}
+[debug] [2022-01-30T19:21:39.914Z] [worker-us-central1-uploadFile-c0eddbb3-9a27-47fc-8a15-70938a76a87f]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-uploadFile-c0eddbb3-9a27-47fc-8a15-70938a76a87f]: IDLE"}}
+[debug] [2022-01-30T19:21:39.914Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-01-30T19:22:24.347Z] File /Users/jacobsherman/Desktop/strive-firebase/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/jacobsherman/Desktop/strive-firebase/functions/index.js changed, reloading triggers"}}
+[debug] [2022-01-30T19:22:25.350Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (~diagnostic~)"}}
+[debug] [2022-01-30T19:22:25.350Z] [worker-~diagnostic~-a8108856-3ce7-4b9f-9d79-2db4873cb39e]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-a8108856-3ce7-4b9f-9d79-2db4873cb39e]: FINISHING"}}
+[debug] [2022-01-30T19:22:25.351Z] [worker-pool] Shutting down IDLE worker (us-central1-uploadFile) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-uploadFile)"}}
+[debug] [2022-01-30T19:22:25.351Z] [worker-us-central1-uploadFile-c0eddbb3-9a27-47fc-8a15-70938a76a87f]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-uploadFile-c0eddbb3-9a27-47fc-8a15-70938a76a87f]: FINISHING"}}
+[debug] [2022-01-30T19:22:25.360Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2022-01-30T19:22:25.361Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=2"}}
+[debug] [2022-01-30T19:22:25.361Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2022-01-30T19:22:25.361Z] [worker-~diagnostic~-d910b5ec-4dfc-4adc-a423-ce4997f1cb33]: Assigning socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40556.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-d910b5ec-4dfc-4adc-a423-ce4997f1cb33]: Assigning socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40556.sock"}}
+[debug] [2022-01-30T19:22:25.361Z] [worker-~diagnostic~-d910b5ec-4dfc-4adc-a423-ce4997f1cb33]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-d910b5ec-4dfc-4adc-a423-ce4997f1cb33]: BUSY"}}
+[debug] [2022-01-30T19:22:25.364Z] [worker-~diagnostic~-a8108856-3ce7-4b9f-9d79-2db4873cb39e]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-a8108856-3ce7-4b9f-9d79-2db4873cb39e]: exited"}}
+[debug] [2022-01-30T19:22:25.364Z] [worker-~diagnostic~-a8108856-3ce7-4b9f-9d79-2db4873cb39e]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-a8108856-3ce7-4b9f-9d79-2db4873cb39e]: FINISHED"}}
+[debug] [2022-01-30T19:22:25.364Z] [worker-us-central1-uploadFile-c0eddbb3-9a27-47fc-8a15-70938a76a87f]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-uploadFile-c0eddbb3-9a27-47fc-8a15-70938a76a87f]: exited"}}
+[debug] [2022-01-30T19:22:25.364Z] [worker-us-central1-uploadFile-c0eddbb3-9a27-47fc-8a15-70938a76a87f]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-uploadFile-c0eddbb3-9a27-47fc-8a15-70938a76a87f]: FINISHED"}}
+[debug] [2022-01-30T19:22:25.543Z] [runtime-status] [40556] Functions runtime initialized. {"cwd":"/Users/jacobsherman/Desktop/strive-firebase/functions","node_version":"16.13.2"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40556] Functions runtime initialized. {\"cwd\":\"/Users/jacobsherman/Desktop/strive-firebase/functions\",\"node_version\":\"16.13.2\"}"}}
+[debug] [2022-01-30T19:22:25.544Z] [runtime-status] [40556] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40556] Disabled runtime features: undefined"}}
+[debug] [2022-01-30T19:22:25.547Z] [runtime-status] [40556] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40556] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:25.550Z] [runtime-status] [40556] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40556] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:25.552Z] [runtime-status] [40556] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40556] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-01-30T19:22:25.554Z] [runtime-status] [40556] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40556] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:25.616Z] [runtime-status] [40556] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40556] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-01-30T19:22:25.616Z] [runtime-status] [40556] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40556] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-01-30T19:22:25.618Z] [runtime-status] [40556] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40556] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:25.618Z] [runtime-status] [40556] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40556] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:25.624Z] [runtime-status] [40556] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40556] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:25.624Z] [runtime-status] [40556] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40556] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-01-30T19:22:25.653Z] [runtime-status] [40556] initializeApp(DEFAULT) {"storageBucket":"strive-62ef8.appspot.com","projectId":"strive-62ef8"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40556] initializeApp(DEFAULT) {\"storageBucket\":\"strive-62ef8.appspot.com\",\"projectId\":\"strive-62ef8\"}"}}
+[debug] [2022-01-30T19:22:25.837Z] [worker-~diagnostic~-d910b5ec-4dfc-4adc-a423-ce4997f1cb33]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-d910b5ec-4dfc-4adc-a423-ce4997f1cb33]: IDLE"}}
+[debug] [2022-01-30T19:22:30.944Z] File /Users/jacobsherman/Desktop/strive-firebase/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/jacobsherman/Desktop/strive-firebase/functions/index.js changed, reloading triggers"}}
+[debug] [2022-01-30T19:22:31.949Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (~diagnostic~)"}}
+[debug] [2022-01-30T19:22:31.949Z] [worker-~diagnostic~-d910b5ec-4dfc-4adc-a423-ce4997f1cb33]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-d910b5ec-4dfc-4adc-a423-ce4997f1cb33]: FINISHING"}}
+[debug] [2022-01-30T19:22:31.950Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1"}}
+[debug] [2022-01-30T19:22:31.950Z] [worker-pool] Cleaned up workers for us-central1-uploadFile: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-uploadFile: 1 --> 0"}}
+[debug] [2022-01-30T19:22:31.956Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2022-01-30T19:22:31.956Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=2"}}
+[debug] [2022-01-30T19:22:31.956Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2022-01-30T19:22:31.956Z] [worker-~diagnostic~-a3dae809-ef93-4735-9dd8-5b280ae76b7f]: Assigning socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40557.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-a3dae809-ef93-4735-9dd8-5b280ae76b7f]: Assigning socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40557.sock"}}
+[debug] [2022-01-30T19:22:31.957Z] [worker-~diagnostic~-a3dae809-ef93-4735-9dd8-5b280ae76b7f]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-a3dae809-ef93-4735-9dd8-5b280ae76b7f]: BUSY"}}
+[debug] [2022-01-30T19:22:31.958Z] [worker-~diagnostic~-d910b5ec-4dfc-4adc-a423-ce4997f1cb33]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-d910b5ec-4dfc-4adc-a423-ce4997f1cb33]: exited"}}
+[debug] [2022-01-30T19:22:31.958Z] [worker-~diagnostic~-d910b5ec-4dfc-4adc-a423-ce4997f1cb33]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-d910b5ec-4dfc-4adc-a423-ce4997f1cb33]: FINISHED"}}
+[debug] [2022-01-30T19:22:32.074Z] [runtime-status] [40557] Functions runtime initialized. {"cwd":"/Users/jacobsherman/Desktop/strive-firebase/functions","node_version":"16.13.2"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40557] Functions runtime initialized. {\"cwd\":\"/Users/jacobsherman/Desktop/strive-firebase/functions\",\"node_version\":\"16.13.2\"}"}}
+[debug] [2022-01-30T19:22:32.075Z] [runtime-status] [40557] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40557] Disabled runtime features: undefined"}}
+[debug] [2022-01-30T19:22:32.077Z] [runtime-status] [40557] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40557] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:32.079Z] [runtime-status] [40557] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40557] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:32.081Z] [runtime-status] [40557] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40557] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-01-30T19:22:32.082Z] [runtime-status] [40557] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40557] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:32.115Z] [runtime-status] [40557] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40557] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-01-30T19:22:32.116Z] [runtime-status] [40557] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40557] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-01-30T19:22:32.116Z] [runtime-status] [40557] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40557] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:32.117Z] [runtime-status] [40557] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40557] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:32.118Z] [runtime-status] [40557] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40557] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:32.118Z] [runtime-status] [40557] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40557] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-01-30T19:22:32.131Z] [runtime-status] [40557] initializeApp(DEFAULT) {"storageBucket":"strive-62ef8.appspot.com","projectId":"strive-62ef8"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40557] initializeApp(DEFAULT) {\"storageBucket\":\"strive-62ef8.appspot.com\",\"projectId\":\"strive-62ef8\"}"}}
+[debug] [2022-01-30T19:22:32.238Z] [worker-~diagnostic~-a3dae809-ef93-4735-9dd8-5b280ae76b7f]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-a3dae809-ef93-4735-9dd8-5b280ae76b7f]: IDLE"}}
+[debug] [2022-01-30T19:22:40.321Z] File /Users/jacobsherman/Desktop/strive-firebase/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/jacobsherman/Desktop/strive-firebase/functions/index.js changed, reloading triggers"}}
+[debug] [2022-01-30T19:22:41.325Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (~diagnostic~)"}}
+[debug] [2022-01-30T19:22:41.326Z] [worker-~diagnostic~-a3dae809-ef93-4735-9dd8-5b280ae76b7f]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-a3dae809-ef93-4735-9dd8-5b280ae76b7f]: FINISHING"}}
+[debug] [2022-01-30T19:22:41.326Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1"}}
+[debug] [2022-01-30T19:22:41.332Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2022-01-30T19:22:41.333Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=2"}}
+[debug] [2022-01-30T19:22:41.333Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2022-01-30T19:22:41.333Z] [worker-~diagnostic~-b5e4ac69-0662-4f7d-8862-9a3f8b3c0f7e]: Assigning socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40562.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-b5e4ac69-0662-4f7d-8862-9a3f8b3c0f7e]: Assigning socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40562.sock"}}
+[debug] [2022-01-30T19:22:41.333Z] [worker-~diagnostic~-b5e4ac69-0662-4f7d-8862-9a3f8b3c0f7e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-b5e4ac69-0662-4f7d-8862-9a3f8b3c0f7e]: BUSY"}}
+[debug] [2022-01-30T19:22:41.335Z] [worker-~diagnostic~-a3dae809-ef93-4735-9dd8-5b280ae76b7f]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-a3dae809-ef93-4735-9dd8-5b280ae76b7f]: exited"}}
+[debug] [2022-01-30T19:22:41.335Z] [worker-~diagnostic~-a3dae809-ef93-4735-9dd8-5b280ae76b7f]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-a3dae809-ef93-4735-9dd8-5b280ae76b7f]: FINISHED"}}
+[debug] [2022-01-30T19:22:41.454Z] [runtime-status] [40562] Functions runtime initialized. {"cwd":"/Users/jacobsherman/Desktop/strive-firebase/functions","node_version":"16.13.2"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40562] Functions runtime initialized. {\"cwd\":\"/Users/jacobsherman/Desktop/strive-firebase/functions\",\"node_version\":\"16.13.2\"}"}}
+[debug] [2022-01-30T19:22:41.455Z] [runtime-status] [40562] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40562] Disabled runtime features: undefined"}}
+[debug] [2022-01-30T19:22:41.457Z] [runtime-status] [40562] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40562] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:41.459Z] [runtime-status] [40562] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40562] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:41.461Z] [runtime-status] [40562] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40562] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-01-30T19:22:41.462Z] [runtime-status] [40562] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40562] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:41.496Z] [runtime-status] [40562] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40562] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-01-30T19:22:41.496Z] [runtime-status] [40562] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40562] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-01-30T19:22:41.496Z] [runtime-status] [40562] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40562] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:41.497Z] [runtime-status] [40562] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40562] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:41.498Z] [runtime-status] [40562] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40562] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:41.498Z] [runtime-status] [40562] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40562] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-01-30T19:22:41.510Z] [runtime-status] [40562] initializeApp(DEFAULT) {"storageBucket":"strive-62ef8.appspot.com","projectId":"strive-62ef8"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40562] initializeApp(DEFAULT) {\"storageBucket\":\"strive-62ef8.appspot.com\",\"projectId\":\"strive-62ef8\"}"}}
+[debug] [2022-01-30T19:22:41.638Z] [worker-~diagnostic~-b5e4ac69-0662-4f7d-8862-9a3f8b3c0f7e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-b5e4ac69-0662-4f7d-8862-9a3f8b3c0f7e]: IDLE"}}
+[debug] [2022-01-30T19:22:45.936Z] File /Users/jacobsherman/Desktop/strive-firebase/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/jacobsherman/Desktop/strive-firebase/functions/index.js changed, reloading triggers"}}
+[debug] [2022-01-30T19:22:46.940Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (~diagnostic~)"}}
+[debug] [2022-01-30T19:22:46.940Z] [worker-~diagnostic~-b5e4ac69-0662-4f7d-8862-9a3f8b3c0f7e]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-b5e4ac69-0662-4f7d-8862-9a3f8b3c0f7e]: FINISHING"}}
+[debug] [2022-01-30T19:22:46.941Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1"}}
+[debug] [2022-01-30T19:22:46.946Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2022-01-30T19:22:46.947Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=2"}}
+[debug] [2022-01-30T19:22:46.947Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2022-01-30T19:22:46.948Z] [worker-~diagnostic~-41754035-0eb7-43fc-bbe7-755fdc6af200]: Assigning socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40563.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-41754035-0eb7-43fc-bbe7-755fdc6af200]: Assigning socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40563.sock"}}
+[debug] [2022-01-30T19:22:46.948Z] [worker-~diagnostic~-41754035-0eb7-43fc-bbe7-755fdc6af200]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-41754035-0eb7-43fc-bbe7-755fdc6af200]: BUSY"}}
+[debug] [2022-01-30T19:22:46.950Z] [worker-~diagnostic~-b5e4ac69-0662-4f7d-8862-9a3f8b3c0f7e]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-b5e4ac69-0662-4f7d-8862-9a3f8b3c0f7e]: exited"}}
+[debug] [2022-01-30T19:22:46.950Z] [worker-~diagnostic~-b5e4ac69-0662-4f7d-8862-9a3f8b3c0f7e]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-b5e4ac69-0662-4f7d-8862-9a3f8b3c0f7e]: FINISHED"}}
+[debug] [2022-01-30T19:22:47.076Z] [runtime-status] [40563] Functions runtime initialized. {"cwd":"/Users/jacobsherman/Desktop/strive-firebase/functions","node_version":"16.13.2"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40563] Functions runtime initialized. {\"cwd\":\"/Users/jacobsherman/Desktop/strive-firebase/functions\",\"node_version\":\"16.13.2\"}"}}
+[debug] [2022-01-30T19:22:47.077Z] [runtime-status] [40563] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40563] Disabled runtime features: undefined"}}
+[debug] [2022-01-30T19:22:47.079Z] [runtime-status] [40563] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40563] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:47.081Z] [runtime-status] [40563] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40563] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:47.083Z] [runtime-status] [40563] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40563] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-01-30T19:22:47.084Z] [runtime-status] [40563] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40563] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:47.117Z] [runtime-status] [40563] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40563] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-01-30T19:22:47.117Z] [runtime-status] [40563] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40563] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-01-30T19:22:47.118Z] [runtime-status] [40563] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40563] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:47.118Z] [runtime-status] [40563] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40563] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:47.119Z] [runtime-status] [40563] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40563] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:47.119Z] [runtime-status] [40563] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40563] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-01-30T19:22:47.131Z] [runtime-status] [40563] initializeApp(DEFAULT) {"storageBucket":"strive-62ef8.appspot.com","projectId":"strive-62ef8"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40563] initializeApp(DEFAULT) {\"storageBucket\":\"strive-62ef8.appspot.com\",\"projectId\":\"strive-62ef8\"}"}}
+[debug] [2022-01-30T19:22:47.251Z] [worker-~diagnostic~-41754035-0eb7-43fc-bbe7-755fdc6af200]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-41754035-0eb7-43fc-bbe7-755fdc6af200]: IDLE"}}
+[debug] [2022-01-30T19:22:50.973Z] File /Users/jacobsherman/Desktop/strive-firebase/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/jacobsherman/Desktop/strive-firebase/functions/index.js changed, reloading triggers"}}
+[debug] [2022-01-30T19:22:51.978Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (~diagnostic~)"}}
+[debug] [2022-01-30T19:22:51.978Z] [worker-~diagnostic~-41754035-0eb7-43fc-bbe7-755fdc6af200]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-41754035-0eb7-43fc-bbe7-755fdc6af200]: FINISHING"}}
+[debug] [2022-01-30T19:22:51.978Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1"}}
+[debug] [2022-01-30T19:22:51.985Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2022-01-30T19:22:51.986Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=2"}}
+[debug] [2022-01-30T19:22:51.986Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2022-01-30T19:22:51.986Z] [worker-~diagnostic~-b1d7c451-9e3a-4d50-953a-df24dcb08cf4]: Assigning socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40564.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-b1d7c451-9e3a-4d50-953a-df24dcb08cf4]: Assigning socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40564.sock"}}
+[debug] [2022-01-30T19:22:51.986Z] [worker-~diagnostic~-b1d7c451-9e3a-4d50-953a-df24dcb08cf4]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-b1d7c451-9e3a-4d50-953a-df24dcb08cf4]: BUSY"}}
+[debug] [2022-01-30T19:22:51.987Z] [worker-~diagnostic~-41754035-0eb7-43fc-bbe7-755fdc6af200]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-41754035-0eb7-43fc-bbe7-755fdc6af200]: exited"}}
+[debug] [2022-01-30T19:22:51.987Z] [worker-~diagnostic~-41754035-0eb7-43fc-bbe7-755fdc6af200]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-41754035-0eb7-43fc-bbe7-755fdc6af200]: FINISHED"}}
+[debug] [2022-01-30T19:22:52.114Z] [runtime-status] [40564] Functions runtime initialized. {"cwd":"/Users/jacobsherman/Desktop/strive-firebase/functions","node_version":"16.13.2"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40564] Functions runtime initialized. {\"cwd\":\"/Users/jacobsherman/Desktop/strive-firebase/functions\",\"node_version\":\"16.13.2\"}"}}
+[debug] [2022-01-30T19:22:52.115Z] [runtime-status] [40564] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40564] Disabled runtime features: undefined"}}
+[debug] [2022-01-30T19:22:52.117Z] [runtime-status] [40564] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40564] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:52.120Z] [runtime-status] [40564] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40564] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:52.122Z] [runtime-status] [40564] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40564] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-01-30T19:22:52.123Z] [runtime-status] [40564] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40564] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:52.158Z] [runtime-status] [40564] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40564] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-01-30T19:22:52.158Z] [runtime-status] [40564] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40564] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-01-30T19:22:52.159Z] [runtime-status] [40564] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40564] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:52.160Z] [runtime-status] [40564] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40564] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:52.161Z] [runtime-status] [40564] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40564] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:52.161Z] [runtime-status] [40564] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40564] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-01-30T19:22:52.174Z] [runtime-status] [40564] initializeApp(DEFAULT) {"storageBucket":"strive-62ef8.appspot.com","projectId":"strive-62ef8"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40564] initializeApp(DEFAULT) {\"storageBucket\":\"strive-62ef8.appspot.com\",\"projectId\":\"strive-62ef8\"}"}}
+[debug] [2022-01-30T19:22:52.296Z] [worker-~diagnostic~-b1d7c451-9e3a-4d50-953a-df24dcb08cf4]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-b1d7c451-9e3a-4d50-953a-df24dcb08cf4]: IDLE"}}
+[debug] [2022-01-30T19:22:55.402Z] File /Users/jacobsherman/Desktop/strive-firebase/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/jacobsherman/Desktop/strive-firebase/functions/index.js changed, reloading triggers"}}
+[debug] [2022-01-30T19:22:56.403Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (~diagnostic~)"}}
+[debug] [2022-01-30T19:22:56.403Z] [worker-~diagnostic~-b1d7c451-9e3a-4d50-953a-df24dcb08cf4]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-b1d7c451-9e3a-4d50-953a-df24dcb08cf4]: FINISHING"}}
+[debug] [2022-01-30T19:22:56.404Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1"}}
+[debug] [2022-01-30T19:22:56.411Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2022-01-30T19:22:56.412Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=2"}}
+[debug] [2022-01-30T19:22:56.412Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2022-01-30T19:22:56.412Z] [worker-~diagnostic~-fdfab2ee-372e-44e8-8d55-5f22fadeebaf]: Assigning socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40565.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-fdfab2ee-372e-44e8-8d55-5f22fadeebaf]: Assigning socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40565.sock"}}
+[debug] [2022-01-30T19:22:56.413Z] [worker-~diagnostic~-fdfab2ee-372e-44e8-8d55-5f22fadeebaf]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-fdfab2ee-372e-44e8-8d55-5f22fadeebaf]: BUSY"}}
+[debug] [2022-01-30T19:22:56.414Z] [worker-~diagnostic~-b1d7c451-9e3a-4d50-953a-df24dcb08cf4]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-b1d7c451-9e3a-4d50-953a-df24dcb08cf4]: exited"}}
+[debug] [2022-01-30T19:22:56.414Z] [worker-~diagnostic~-b1d7c451-9e3a-4d50-953a-df24dcb08cf4]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-b1d7c451-9e3a-4d50-953a-df24dcb08cf4]: FINISHED"}}
+[debug] [2022-01-30T19:22:56.529Z] [runtime-status] [40565] Functions runtime initialized. {"cwd":"/Users/jacobsherman/Desktop/strive-firebase/functions","node_version":"16.13.2"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40565] Functions runtime initialized. {\"cwd\":\"/Users/jacobsherman/Desktop/strive-firebase/functions\",\"node_version\":\"16.13.2\"}"}}
+[debug] [2022-01-30T19:22:56.530Z] [runtime-status] [40565] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40565] Disabled runtime features: undefined"}}
+[debug] [2022-01-30T19:22:56.531Z] [runtime-status] [40565] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40565] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:56.534Z] [runtime-status] [40565] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40565] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:56.535Z] [runtime-status] [40565] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40565] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-01-30T19:22:56.536Z] [runtime-status] [40565] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40565] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:56.568Z] [runtime-status] [40565] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40565] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-01-30T19:22:56.568Z] [runtime-status] [40565] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40565] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-01-30T19:22:56.569Z] [runtime-status] [40565] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40565] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:56.569Z] [runtime-status] [40565] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40565] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:56.570Z] [runtime-status] [40565] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40565] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:22:56.570Z] [runtime-status] [40565] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40565] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-01-30T19:22:56.582Z] [runtime-status] [40565] initializeApp(DEFAULT) {"storageBucket":"strive-62ef8.appspot.com","projectId":"strive-62ef8"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40565] initializeApp(DEFAULT) {\"storageBucket\":\"strive-62ef8.appspot.com\",\"projectId\":\"strive-62ef8\"}"}}
+[debug] [2022-01-30T19:22:56.737Z] [worker-~diagnostic~-fdfab2ee-372e-44e8-8d55-5f22fadeebaf]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-fdfab2ee-372e-44e8-8d55-5f22fadeebaf]: IDLE"}}
+[debug] [2022-01-30T19:23:09.634Z] File /Users/jacobsherman/Desktop/strive-firebase/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/jacobsherman/Desktop/strive-firebase/functions/index.js changed, reloading triggers"}}
+[debug] [2022-01-30T19:23:10.636Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (~diagnostic~)"}}
+[debug] [2022-01-30T19:23:10.636Z] [worker-~diagnostic~-fdfab2ee-372e-44e8-8d55-5f22fadeebaf]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-fdfab2ee-372e-44e8-8d55-5f22fadeebaf]: FINISHING"}}
+[debug] [2022-01-30T19:23:10.637Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1"}}
+[debug] [2022-01-30T19:23:10.643Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2022-01-30T19:23:10.643Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=2"}}
+[debug] [2022-01-30T19:23:10.643Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2022-01-30T19:23:10.644Z] [worker-~diagnostic~-d77a8043-95d1-4410-bcb4-fb428ac52039]: Assigning socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40566.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-d77a8043-95d1-4410-bcb4-fb428ac52039]: Assigning socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40566.sock"}}
+[debug] [2022-01-30T19:23:10.644Z] [worker-~diagnostic~-d77a8043-95d1-4410-bcb4-fb428ac52039]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-d77a8043-95d1-4410-bcb4-fb428ac52039]: BUSY"}}
+[debug] [2022-01-30T19:23:10.647Z] [worker-~diagnostic~-fdfab2ee-372e-44e8-8d55-5f22fadeebaf]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-fdfab2ee-372e-44e8-8d55-5f22fadeebaf]: exited"}}
+[debug] [2022-01-30T19:23:10.647Z] [worker-~diagnostic~-fdfab2ee-372e-44e8-8d55-5f22fadeebaf]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-fdfab2ee-372e-44e8-8d55-5f22fadeebaf]: FINISHED"}}
+[debug] [2022-01-30T19:23:10.782Z] [runtime-status] [40566] Functions runtime initialized. {"cwd":"/Users/jacobsherman/Desktop/strive-firebase/functions","node_version":"16.13.2"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40566] Functions runtime initialized. {\"cwd\":\"/Users/jacobsherman/Desktop/strive-firebase/functions\",\"node_version\":\"16.13.2\"}"}}
+[debug] [2022-01-30T19:23:10.783Z] [runtime-status] [40566] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40566] Disabled runtime features: undefined"}}
+[debug] [2022-01-30T19:23:10.786Z] [runtime-status] [40566] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40566] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-01-30T19:23:10.788Z] [runtime-status] [40566] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40566] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:23:10.790Z] [runtime-status] [40566] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40566] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-01-30T19:23:10.792Z] [runtime-status] [40566] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40566] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:23:10.858Z] [runtime-status] [40566] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40566] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-01-30T19:23:10.859Z] [runtime-status] [40566] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40566] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-01-30T19:23:10.860Z] [runtime-status] [40566] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40566] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:23:10.862Z] [runtime-status] [40566] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40566] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-01-30T19:23:10.863Z] [runtime-status] [40566] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40566] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:23:10.863Z] [runtime-status] [40566] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40566] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-01-30T19:23:10.880Z] [runtime-status] [40566] initializeApp(DEFAULT) {"storageBucket":"strive-62ef8.appspot.com","projectId":"strive-62ef8"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40566] initializeApp(DEFAULT) {\"storageBucket\":\"strive-62ef8.appspot.com\",\"projectId\":\"strive-62ef8\"}"}}
+[debug] [2022-01-30T19:23:11.003Z] [worker-~diagnostic~-d77a8043-95d1-4410-bcb4-fb428ac52039]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-d77a8043-95d1-4410-bcb4-fb428ac52039]: IDLE"}}
+[debug] [2022-01-30T19:23:14.186Z] File /Users/jacobsherman/Desktop/strive-firebase/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/jacobsherman/Desktop/strive-firebase/functions/index.js changed, reloading triggers"}}
+[debug] [2022-01-30T19:23:15.189Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (~diagnostic~)"}}
+[debug] [2022-01-30T19:23:15.189Z] [worker-~diagnostic~-d77a8043-95d1-4410-bcb4-fb428ac52039]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-d77a8043-95d1-4410-bcb4-fb428ac52039]: FINISHING"}}
+[debug] [2022-01-30T19:23:15.190Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1"}}
+[debug] [2022-01-30T19:23:15.197Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2022-01-30T19:23:15.197Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=2"}}
+[debug] [2022-01-30T19:23:15.198Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2022-01-30T19:23:15.198Z] [worker-~diagnostic~-7be6d4cc-0343-4dd1-b0f0-9722be4b50d1]: Assigning socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40567.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-7be6d4cc-0343-4dd1-b0f0-9722be4b50d1]: Assigning socketPath: /var/folders/85/mykj8lbx2zd_f9blx5qktkjm0000gn/T/fire_emu_40567.sock"}}
+[debug] [2022-01-30T19:23:15.198Z] [worker-~diagnostic~-7be6d4cc-0343-4dd1-b0f0-9722be4b50d1]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-7be6d4cc-0343-4dd1-b0f0-9722be4b50d1]: BUSY"}}
+[debug] [2022-01-30T19:23:15.199Z] [worker-~diagnostic~-d77a8043-95d1-4410-bcb4-fb428ac52039]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-d77a8043-95d1-4410-bcb4-fb428ac52039]: exited"}}
+[debug] [2022-01-30T19:23:15.199Z] [worker-~diagnostic~-d77a8043-95d1-4410-bcb4-fb428ac52039]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-d77a8043-95d1-4410-bcb4-fb428ac52039]: FINISHED"}}
+[debug] [2022-01-30T19:23:15.338Z] [runtime-status] [40567] Functions runtime initialized. {"cwd":"/Users/jacobsherman/Desktop/strive-firebase/functions","node_version":"16.13.2"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40567] Functions runtime initialized. {\"cwd\":\"/Users/jacobsherman/Desktop/strive-firebase/functions\",\"node_version\":\"16.13.2\"}"}}
+[debug] [2022-01-30T19:23:15.340Z] [runtime-status] [40567] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40567] Disabled runtime features: undefined"}}
+[debug] [2022-01-30T19:23:15.343Z] [runtime-status] [40567] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40567] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-01-30T19:23:15.349Z] [runtime-status] [40567] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40567] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:23:15.353Z] [runtime-status] [40567] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40567] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-01-30T19:23:15.355Z] [runtime-status] [40567] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40567] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:23:15.397Z] [runtime-status] [40567] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40567] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-01-30T19:23:15.397Z] [runtime-status] [40567] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40567] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-01-30T19:23:15.399Z] [runtime-status] [40567] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40567] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:23:15.401Z] [runtime-status] [40567] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40567] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-01-30T19:23:15.402Z] [runtime-status] [40567] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.16.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40567] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.16.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-01-30T19:23:15.402Z] [runtime-status] [40567] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.12.0","resolution":"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40567] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.12.0\",\"resolution\":\"/Users/jacobsherman/Desktop/strive-firebase/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-01-30T19:23:15.415Z] [runtime-status] [40567] initializeApp(DEFAULT) {"storageBucket":"strive-62ef8.appspot.com","projectId":"strive-62ef8"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [40567] initializeApp(DEFAULT) {\"storageBucket\":\"strive-62ef8.appspot.com\",\"projectId\":\"strive-62ef8\"}"}}
+[debug] [2022-01-30T19:23:15.532Z] [worker-~diagnostic~-7be6d4cc-0343-4dd1-b0f0-9722be4b50d1]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-7be6d4cc-0343-4dd1-b0f0-9722be4b50d1]: IDLE"}}
+[debug] [2022-01-31T01:42:13.400Z] [worker-~diagnostic~-7be6d4cc-0343-4dd1-b0f0-9722be4b50d1]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-7be6d4cc-0343-4dd1-b0f0-9722be4b50d1]: exited"}}
+[debug] [2022-01-31T01:42:13.440Z] [worker-~diagnostic~-7be6d4cc-0343-4dd1-b0f0-9722be4b50d1]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-7be6d4cc-0343-4dd1-b0f0-9722be4b50d1]: FINISHED"}}
+[debug] [2022-01-31T01:42:13.508Z] Received signal SIGHUP 1
+[info]  
+[info] i  emulators: Received SIGHUP for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGHUP signal again to stop right now. 
+[debug] [2022-01-31T01:42:13.582Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.598Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.600Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.606Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.609Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.632Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.633Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.634Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.635Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.636Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.637Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.638Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.640Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.640Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.641Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.642Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.644Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.645Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.647Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.647Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.648Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.652Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.654Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.655Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.659Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.660Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.660Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.661Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.663Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.664Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.665Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.666Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.669Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.670Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.671Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.672Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.673Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
+[debug] [2022-01-31T01:42:13.686Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at DerivedLogger.Readable.read (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:467:26)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.687Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.691Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.693Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.715Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-01-31T01:42:13.719Z] Error: write EIO
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at WriteStream.Socket._writeGeneric (node:net:795:11)
+    at WriteStream.Socket._write (node:net:807:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at WriteStream.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:662:20)
+    at DerivedLogger.emit (node:events:402:35)
+    at DerivedLogger.emit (node:domain:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:297:12)
+[error] 
